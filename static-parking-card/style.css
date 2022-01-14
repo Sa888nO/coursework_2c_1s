@@ -55,11 +55,15 @@ body {
   row-gap: 93px;
 }
 .main__parking-card {
+  box-sizing: border-box;
   display: grid;
   width: 500px;
   height: 250px;
   background-color: #6f6969;
   grid-template-rows: 1fr 2fr 1fr;
+}
+.main__parking-card:hover {
+  border: 1px solid orange;
 }
 .parking-cart__title {
   font-size: 36px;
@@ -114,6 +118,11 @@ body {
   background-image: url(image.png);
   background-repeat: no-repeat;
 }
+.main__btn-back:hover {
+  color: #ff7f27;
+  background-image: url(image2.png);
+  background-repeat: no-repeat;
+}
 
 .footer {
   margin: 0px;
@@ -138,4 +147,10 @@ body {
   width: 80px;
   height: 80px;
   background-image: url("Github.svg");
+  border: 1px solid black;
+  border-radius: 60%;
+}
+.footer__link:hover {
+  border: 1px solid greenyellow;
+  border-radius: 60%;
 }

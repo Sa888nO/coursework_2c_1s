@@ -1,106 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-    font-family: 'Comfortaa', cursive;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
 }
 
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	height: 100%;
-    background-color: #4B6474;
+  height: 100%;
+  background-color: #4b6474;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .header {
-    display: flex;
-    background-color: #4B6474;
-    height: 100px;
-    flex: 0 0 auto;
+  display: flex;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
 }
 .header__text {
-    font-size: 36px;
-    margin: auto;
-    color: white;
+  font-size: 36px;
+  margin: auto;
+  color: white;
 }
 
 .main {
-    display: flex;
-    background-color: #96B7CD;
-    height: 100%;
-    flex: 1 0 auto;
+  display: flex;
+  background-color: #96b7cd;
+  height: 100%;
+  flex: 1 0 auto;
 }
 .main__content {
-    display: grid;
-    width: 724px;
-    height: 325px;
-    margin: auto;
-    column-gap:  62px;
-    row-gap:  113px;
-    grid-template-areas:
+  display: grid;
+  width: 724px;
+  height: 325px;
+  margin: auto;
+  column-gap: 62px;
+  row-gap: 113px;
+  grid-template-areas:
     "A A"
     "B C";
 }
 .main__input {
-    box-sizing: border-box;
-    padding-left: 20px;
-    border: 3px solid black;
-    grid-area: A;
-    font-size: 38px;
-    width: 724px;
-    height: 100px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border: 3px solid black;
+  grid-area: A;
+  font-size: 38px;
+  width: 724px;
+  height: 100px;
+}
+.main__input:hover {
+  border: 3px solid orange;
 }
 .main__btn1 {
-    font-size: 38px;
-    grid-area: B;
-    width: 331px;
-    height: 112px;
-    background-color: #95256C;
-    border: 3px solid black;
-    color: white;
+  font-size: 38px;
+  grid-area: B;
+  width: 331px;
+  height: 112px;
+  background-color: #95256c;
+  border: 3px solid black;
+  color: white;
+}
+.main__btn1:hover {
+  border: 3px solid orange;
 }
 .main__btn2 {
-    background-color: #810051;
-    border: 3px solid black;
-    font-size: 38px;
-    grid-area: C;
-    width: 331px;
-    height: 112px;
-    color: white;
+  background-color: #810051;
+  border: 3px solid black;
+  font-size: 38px;
+  grid-area: C;
+  width: 331px;
+  height: 112px;
+  color: white;
 }
-
+.main__btn2:hover {
+  border: 3px solid orange;
+}
 
 .footer {
-    margin: 0px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    background-color: #4B6474;
-    height: 100px;
-    flex: 0 0 auto;
-    flex-wrap: wrap;
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
 }
 .footer__text {
-    margin: auto 0;
-    font-size: 20px;
-    color: white;
-    flex: 0 1 auto;
-
+  margin: auto 0;
+  font-size: 20px;
+  color: white;
+  flex: 0 1 auto;
 }
 .footer__link {
-    margin: auto 0;
-    flex: 0 1 auto;
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url('Github.svg');
+  margin: auto 0;
+  flex: 0 1 auto;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("Github.svg");
+  border: 1px solid black;
+  border-radius: 60%;
+}
+.footer__link:hover {
+  border: 1px solid greenyellow;
+  border-radius: 60%;
 }
