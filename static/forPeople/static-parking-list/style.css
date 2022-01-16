@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #4b6474;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  display: flex;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
+}
+.header__text {
+  font-size: 36px;
+  margin: auto;
+  color: white;
+}
+
+.main {
+  display: flex;
+  background-color: #96b7cd;
+  height: 100%;
+  flex: 1 0 auto;
+}
+.main__content {
+  box-sizing: border-box;
+  margin: auto;
+  display: grid;
+  height: 100%;
+  margin: auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-areas:
+    "A E"
+    "B E"
+    "C E"
+    "D E";
+}
+
+.main__address {
+  justify-content: space-between;
+  display: flex;
+  grid-area: A;
+}
+.main__work-time {
+  display: flex;
+  grid-area: B;
+}
+.main__capacity {
+  display: flex;
+  grid-area: C;
+}
+.main__workload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: D;
+}
+.main__gps {
+  grid-area: E;
+  width: 452px;
+  height: 650px;
+  background-image: url(gps.png);
+}
+.main__text {
+  width: 250px;
+  height: 40px;
+  font-size: 36px;
+}
+
+.main__wl-panel {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 463px;
+  height: 86px;
+  background-color: #e56262;
+  border: 6px solid black;
+  font-size: 48px;
+  color: white;
+}
+.main__text-gps {
+  width: 463px;
+  height: 86px;
+  font-size: 36px;
+}
+.main__answer {
+  width: 600px;
+  height: 80px;
+  font-size: 36px;
+  color: white;
+}
+
+.main__btn-back {
+  position: fixed;
+  left: 0px;
+  bottom: 110px;
+  text-align: right;
+  font-size: 38px;
+  display: block;
+  width: 180px;
+  height: 50px;
+  color: #0075ff80;
+  background-image: url(image.png);
+  background-repeat: no-repeat;
+}
+.main__btn-back:hover {
+  color: #ff7f27;
+  background-image: url(image2.png);
+  background-repeat: no-repeat;
+}
+
+.footer {
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+.footer__text {
+  margin: auto 0;
+  font-size: 20px;
+  color: white;
+  flex: 0 1 auto;
+}
+.footer__link {
+  margin: auto 0;
+  flex: 0 1 auto;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("Github.svg");
+  border: 1px solid black;
+  border-radius: 60%;
+}
+.footer__link:hover {
+  border: 1px solid greenyellow;
+  border-radius: 60%;
+}

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #4b6474;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  display: flex;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
+}
+.header__text {
+  font-size: 36px;
+  margin: auto;
+  color: white;
+}
+
+.main {
+  display: flex;
+  background-color: #96b7cd;
+  height: 100%;
+  flex: 1 0 auto;
+}
+.main__content {
+  box-sizing: border-box;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  margin: auto;
+  column-gap: 96px;
+  row-gap: 93px;
+}
+.main__parking-card {
+  box-sizing: border-box;
+  display: grid;
+  width: 500px;
+  height: 250px;
+  background-color: #6f6969;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.main__parking-card:hover {
+  border: 1px solid orange;
+}
+.parking-cart__title {
+  font-size: 36px;
+  color: white;
+  margin: auto;
+}
+.parking-card__info-about-distance {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #868686;
+}
+.parking-card__distance {
+  margin: auto;
+  color: #00ff19;
+  font-size: 20px;
+}
+.parking-card__time {
+  margin: auto;
+  color: white;
+  font-size: 20px;
+}
+
+.parking-card__info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.parking-card__text {
+  width: 250px;
+  height: 100px;
+  color: white;
+  font-size: 20px;
+}
+.parking-card__img {
+  width: 150px;
+  height: 121px;
+  background-image: url(parking.png);
+}
+.main__btn-back {
+  position: fixed;
+  left: 0px;
+  bottom: 110px;
+  text-align: right;
+  font-size: 38px;
+  display: block;
+  width: 180px;
+  height: 50px;
+  color: #0075ff80;
+  background-image: url(image.png);
+  background-repeat: no-repeat;
+}
+.main__btn-back:hover {
+  color: #ff7f27;
+  background-image: url(image2.png);
+  background-repeat: no-repeat;
+}
+
+.footer {
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+.footer__text {
+  margin: auto 0;
+  font-size: 20px;
+  color: white;
+  flex: 0 1 auto;
+}
+.footer__link {
+  margin: auto 0;
+  flex: 0 1 auto;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("Github.svg");
+  border: 1px solid black;
+  border-radius: 60%;
+}
+.footer__link:hover {
+  border: 1px solid greenyellow;
+  border-radius: 60%;
+}
