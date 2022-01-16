@@ -1,0 +1,26 @@
+{
+  "name": "coursework_2c_1s",
+  "version": "1.0.0",
+  "description": "My courseworn in MosPol",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sa888nO/coursework_2c_1s.git"
+  },
+  "author": "Alex Egorushkin 201-362",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sa888nO/coursework_2c_1s/issues"
+  },
+  "homepage": "https://github.com/Sa888nO/coursework_2c_1s#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
