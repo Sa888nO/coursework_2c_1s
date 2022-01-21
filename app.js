@@ -2,6 +2,9 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+//GET
+app.get('/api/forTaxi', () => )
+
 app.use(
   express.static(
     path.resolve(__dirname, "projectSources/static/chooseRole/choose-role")
