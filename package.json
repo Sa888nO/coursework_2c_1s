@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/Sa888nO/coursework_2c_1s#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "mysql": "^2.18.1"
+    "hapi": "^18.1.0",
+    "http": "0.0.1-security",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
