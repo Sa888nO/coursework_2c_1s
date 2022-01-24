@@ -9,6 +9,12 @@ app.use(bodyParser.json());
 const routes = require("./settings/routes");
 routes(app);
 
+app.get("/mainPage", (req, res) => {
+  res.sendFile(
+    __dirname + "/projectSources/static/chooseRole/choose-role/main.html"
+  );
+});
+
 app.listen(port, () => {
   console.log(`App listen on port ${port}`);
 });
