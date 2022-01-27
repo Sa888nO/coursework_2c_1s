@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+/* template all pages*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #4b6474;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  display: flex;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
+}
+.header__text {
+  font-size: 36px;
+  margin: auto;
+  color: white;
+}
+
+.main {
+  display: flex;
+  background-color: #96b7cd;
+  height: 100%;
+  flex: 1 0 auto;
+}
+.footer {
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4b6474;
+  height: 100px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+.footer__text {
+  margin: auto 0;
+  font-size: 20px;
+  color: white;
+  flex: 0 1 auto;
+}
+.footer__link {
+  margin: auto 0;
+  flex: 0 1 auto;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/images/Github.svg");
+  border: 1px solid black;
+  border-radius: 60%;
+}
+.footer__link:hover {
+  border: 1px solid greenyellow;
+  border-radius: 60%;
+}
+
+/* index page */
+
+.index__content {
+  display: grid;
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  column-gap: 62px;
+  grid-template-areas: "B C";
+}
+
+.index__btn1 {
+  font-size: 38px;
+  grid-area: B;
+  width: 569px;
+  height: 100%;
+  background-image: url("/images/people.jpg");
+  border: 3px solid black;
+}
+.index__btn1:hover {
+  border: 3px solid orange;
+}
+.index__btn2 {
+  background-image: url("/images/taxi.jpg");
+  border: 3px solid black;
+  font-size: 38px;
+  grid-area: C;
+  width: 569px;
+  height: 100%;
+}
+.index__btn2:hover {
+  border: 3px solid orange;
+}
+/* search pages for people and taxi + btn back  */
+
+.search__content {
+  display: grid;
+  width: 724px;
+  height: 325px;
+  margin: auto;
+  column-gap: 62px;
+  row-gap: 113px;
+  grid-template-areas:
+    "A A"
+    "B B";
+}
+.search__input {
+  box-sizing: border-box;
+  padding-left: 20px;
+  border: 3px solid black;
+  grid-area: A;
+  font-size: 38px;
+  width: 724px;
+  height: 100px;
+}
+.search__input::placeholder {
+  transition: 0.5s;
+  color: #aaa;
+}
+.search__input:focus::placeholder {
+  font-size: 24px;
+  transform: translateY(-36px) translateX(-20px);
+}
+.search__input:hover {
+  border: 3px solid orange;
+}
+.search__btn {
+  background-color: #810051;
+  border: 3px solid black;
+  font-size: 38px;
+  grid-area: C;
+  width: 724px;
+  height: 112px;
+  color: white;
+}
+.search__btn:hover {
+  border: 3px solid orange;
+}
+
+.btn-back {
+  position: fixed;
+  left: 0px;
+  bottom: 110px;
+  text-align: right;
+  font-size: 38px;
+  display: block;
+  width: 70px;
+  height: 50px;
+  color: #0075ff80;
+  background-image: url("/images/image.png");
+  background-repeat: no-repeat;
+}
+.btn-back:hover {
+  color: #ff7f27;
+  background-image: url("/images/image2.png");
+  background-repeat: no-repeat;
+}
+/* get for people and taxi */
+
+.get__content {
+  max-height: 520px;
+  overflow: auto;
+  width: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 1rem;
+}
+.card__block {
+  box-sizing: border-box;
+  padding: 10px;
+  justify-content: space-between;
+  display: grid;
+  background-color: #6f6969;
+  width: 700px;
+  height: 250px;
+  grid-template-areas:
+    "A A"
+    "B C";
+}
+.main__info {
+  grid-area: A;
+  justify-content: center;
+}
+.name {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  margin: auto;
+}
+.address {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(187, 241, 189);
+  margin: auto;
+}
+.card__info {
+  grid-area: B;
+  display: grid;
+  grid-template-rows: (2, 1fr);
+  row-gap: 10px;
+  justify-content: left;
+}
+.map {
+  width: 150px;
+  background-image: url("/images/parking.png");
+  height: 150px;
+  grid-area: C;
+  background-color: #810051;
+}
+.info__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.info__text {
+  width: 130px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(101, 157, 230);
+}
+.info__answer {
+  width: 120px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+.comment__button {
+  box-sizing: border-box;
+  text-align: center;
+  width: 200px;
+  height: 25px;
+  font-size: 18px;
+  color: rgb(15, 15, 15);
+  border: 2px solid black;
+  background-color: rgb(186, 250, 123);
+}
+.comment__button:hover {
+  border: 2px solid orange;
+}
+a {
+  text-decoration: none;
+}
+
+/* add */
+
+.add__form {
+  max-height: 520px;
+  overflow: auto;
+  width: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 1rem;
+}
