@@ -1,5 +1,6 @@
 <?php
 $id = $_GET["Id"];
+$title="Оставьте комментарий";
 
 $content ='
     <form action="addNewCom.php" method="POST" class="add__form">
